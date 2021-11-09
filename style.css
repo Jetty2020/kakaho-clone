@@ -103,7 +103,7 @@ main {
 }
 
 .card:hover {
-    box-shadow: 1px 7px 12px 9px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 10px 12px 9px rgba(0, 0, 0, 0.08);
     transform: translateY(-10px);
 }
 
