@@ -2,6 +2,7 @@
     main {
         display: block;
         width: 640px;
+        padding: 0 10px;
         margin: 0 auto;
         box-sizing: border-box;
     }
@@ -299,11 +300,3 @@ h3 {
     letter-spacing: -1px;
     height: 62px;
 }
-
-/* display: block;
-margin-top: 20px;
-max-height: 92px;
-font-size: 24px;
-line-height: 32px;
-letter-spacing: -1px;
-height: 70px; */
