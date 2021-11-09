@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 400,700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-SemiBold';
+    padding: 0 70px;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+main {
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1300px;
+}
+
+.sc-only {
+    position: absolute;
+    left: -9999px;
+    /* text-indent: -9999px; */
+}
+
+/* 상단 메뉴바 */
+.menu-bar {
+    height: 72px;
+}
+.menu-bar__title {
+    width: 12%;
+}
+.menu-bar__logo {
+    width: 74px;
+}
+.menu-bar__menu ul {
+    display: flex;
+}
+.menu-bar__menu li {
+    font-size: 16px;
+    padding: 0 28px;
+}
+.menu-bar__side button {
+    border: 0;
+    outline: 0;
+    background: none;
+    margin: 0 8px;
+}
+.menu-bar__side button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* 메인 헤더 */
+h3 {
+    font-size: 46px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.5em;
+}
+
+.tit-date {
+    background: url(img/ico_date8.gif) no-repeat;
+    background-size: 72px 72px;
+}
+
+.tit-main em {
+    display: block;
+    padding-left: 80px;
+    line-height: 70px;
+}
+
+.tit-main {
+    margin-bottom: 90px;
+}
+
+/* 카드 섹션 시작 */
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-wrap__column {
+    flex-direction: column;
+}
+
+.card {
+    margin-right: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    /* min-height: 100%; */
+}
+
+.card-main strong {
+    display: block;
+    margin-top: 20px;
+    max-height: 92px;
+    height: 92px;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: -1px;
+}
+
+.card-main {
+    width: 625px;
+    max-height: 700px;
+    /* background: url('img/ee656c5a017c00001.jpg') no-repeat 0 200px;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.card-main__tit {
+    position: relative;
+    padding: 25px 24px 0;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+.alarm {
+    height: 36px;
+}
+
+.alarm-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.alarm-text {
+    display: inline-block;
+    position: relative;
+    background-color: #EEEEEE;
+    top: -15px;
+    padding: 12px;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-size: 13px;
+/* 보도자료 ::before 써서 말풍선 */
+}
+
+.more {
+    float: right;
+    margin-top: 6px;
+    margin-right: -10px;
+    color: #ccc;
+    font-size: 1.3em;
+}
+
+.keyword {
+    font-family: 'Pretendard-ExtraLight';
+    font-size: 15px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    color: grey;
+}
+
+.card-mid {
+    width: 300px;
+    max-height: 430px;
+    margin-bottom: 35px;
+}
+
+.card-mid__tit {
+    padding: 25px 24px 0;
+}
+
+.card-mid strong {
+    display: block;
+    margin-top: 20px;
+    max-height: 92px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    height: 70px;
+}
+
+.card-main header ~ a img {
+    width: 625px;
+}
+.card-mid header ~ a img {
+    width: 300px;
+}
