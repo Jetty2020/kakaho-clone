@@ -15,7 +15,7 @@
 <body>
     <header class="menu-bar">
         <h1 class="menu-bar__title"><span class="sc-only">카카호</span>
-            <a href="#"><img src="img/logo.svg" class="menu-bar__logo"></a>
+            <a href="#"><img src="img/kakaho_logo.png" class="menu-bar__logo"></a>
         </h1>
         <nav>
             <ul class="menu-bar__menu">
@@ -36,12 +36,13 @@
         <header class="tit-main">
             <h3 class="tit-date">
                 <em>오늘의 카카호</em>
-                <span>11월 9일 화요일 소식입니다</span>
+                <span>11월 11일 화요일 소식입니다</span>
             </h3>
         </header>
+        <!-- 섹션 그리드로 다시 짜보기 -->
         <section class="card-section">
             <div class="card-wrap">
-                <article class="card card-main">
+                <article class="card card-main card-sticky">
                     <header class="card-main__tit">
                         <div class="alarm">
                             <img class="alarm-icon" src="img/6562f7bc017800001.png" alt="">
@@ -49,8 +50,8 @@
                             <a href="#"><i class="bi bi-three-dots-vertical more "></i></a>
                         </div>
                         <a href="#"><strong>카카호엔터테인먼트, 서울시 주최 '2021 서울웹툰공모전' 단독 후원사로 참여</strong></a>
-                        <span class="keyword">#카카오엔터테인먼트</span>
-                        <span class="keyword">#카카오페이지</span>
+                        <span class="keyword">#카카호엔터테인먼트</span>
+                        <span class="keyword">#카카호페이지</span>
                         <span class="keyword">#서울시</span>
                     </header>
                     <a href="#"><img class="card-img" src="img/ee656c5a017c00001.jpg" art=""></a>
@@ -87,48 +88,54 @@
 
                 <article class="card card-mini">
                     <a href="#">
-                    <header class="card-mini__tit">
+                        <header class="card-mini__tit">
+                            <div class="alarm">
+                                <img class="alarm-icon" src="img/65618715017800001.png" alt="">
+                                <span class="alarm-text">주가정보</span>
+                            </div>
+                            <div class="num-info">
+                            <strong class="str-big">125,000</strong>
+                            <span class="sc-only">전일대비 상승</span>
+                            <span class="up"></span>
+                            <span>500</span>
+                            </div>
+                            <span class="keyword">2021.11.08 21:01PM</span>
+                    </a>
+                </article>
+
+                <article class="card card-mid">
+                    <header class="card-mid__tit">
                         <div class="alarm">
-                            <img class="alarm-icon" src="img/65618715017800001.png" alt="">
-                            <span class="alarm-text">주가정보</span>
-                            <i class="bi bi-three-dots-vertical more "></i>
+                            <img class="alarm-icon" src="img/6562f7bc017800001.png" alt="">
+                            <span class="alarm-text">보도자료</span>
+                            <a href="#"><i class="bi bi-three-dots-vertical more "></i></a>
                         </div>
-                        <strong class="str-big">125,000</strong>
-                            <span class="num-info up">
-                                <span class="sc-only">전일대비 상승</span>
-                                500</span>
-                            <span class="keyword">2021.11.08 21:01PM</span></a>
-                        </article>
-
-                        <article class="card card-mid">
-                            <header class="card-mid__tit">
-                                <div class="alarm">
-                                    <img class="alarm-icon" src="img/6562f7bc017800001.png" alt="">
-                                    <span class="alarm-text">보도자료</span>
-                                    <a href="#"><i class="bi bi-three-dots-vertical more "></i></a>
-                                </div>
-                                <a href=""><strong>카카오, 2021년 3분기 연결 매출 1조7,408억 원,...</strong></a>
-                                <span class="keyword">##2021년 3분기</span>
-                                <span class="keyword">##실적발표</span>
-                            </header>
-                            <a href="#"><img src="img/e7fa9044017c00001.png" alt=""></a>
-                        </article>
-
-                        <article class="card card-mini">
-                            <a href="#">
-                            <header class="card-mini__tit">
-                                <div class="alarm">
-                                    <img class="alarm-icon" src="img/ico_responsible.png" alt="">
-                                    <span class="alarm-text">약속과 책임</span>
-                                    <i class="bi bi-three-dots-vertical more "></i>
-                                </div>
-                                <strong class="str-small">카카오는 당신과 함께 더 나은 세상을 만듭니다.</strong>
-                                        <span class="keyword">##약속과 책임</span>
-                                        <span class="keyword">##esg</span>
-                                        <span class="keyword">#소셜임팩트</span></a>
-                                </article>
-
+                        <a href=""><strong>카카호, 2021년 3분기 연결 매출 1조7,408억 원,...</strong></a>
+                        <span class="keyword">##2021년 3분기</span>
+                        <span class="keyword">##실적발표</span>
                     </header>
+                    <a href="#"><img src="img/e7fa9044017c00001.png" alt=""></a>
+                </article>
+
+                <article class="card card-mini">
+                    <a href="#">
+                        <header class="card-mini__tit">
+                            <div class="alarm">
+                                <img class="alarm-icon" src="img/ico_responsible.png" alt="">
+                                <span class="alarm-text">약속과 책임</span>
+                            </div>
+                            <strong class="str-small">카카호는 당신과 함께 더 나은 세상을 만듭니다.</strong>
+                            <span class="keyword">##약속과 책임</span>
+                            <span class="keyword">##esg</span>
+                            <span class="keyword">#소셜임팩트</span>
+                    </a>
+                </article>
+            </div>
+            <div class="culture-wrap">
+                <article class="card card-big">
+                    <strong>기술과 사람으로 더 나은 세상을 만듭니다.</strong>
+                    <a href="#" class="culture-link">카카호문화 바로가기 <i class="bi bi-arrow-right-short"></i></a>
+                    <img class="card-img" src="img/bg_home_culture_211111.png" art="">
                 </article>
             </div>
         </section>
