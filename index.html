@@ -14,7 +14,7 @@
 
 <body>
     <header class="menu-bar">
-        <h1 class="menu-bar__title"><span class="sc-only">카카호</span>
+        <h1 class="menu-bar__title"><span class="sr-only">카카호</span>
             <a href="#"><img src="img/kakaho_logo.png" class="menu-bar__logo"></a>
         </h1>
         <nav>
@@ -32,32 +32,37 @@
         </nav>
     </header>
     <main>
-        <h2 class="sc-only">홈 본문</h2>
+        <h2 class="sr-only">홈 본문</h2>
         <header class="tit-main">
             <h3 class="tit-date">
                 <em>오늘의 카카호</em>
                 <span>11월 11일 화요일 소식입니다</span>
             </h3>
         </header>
-        <!-- 섹션 그리드로 다시 짜보기 -->
-        <section class="card-section">
-            <div class="card-wrap">
-                <article class="card card-main card-sticky">
+
+        <!-- grid 시작 -->
+        <section class="container">
+            <div class="main">
+                <article class="item main-item">
                     <header class="card-main__tit">
                         <div class="alarm">
                             <img class="alarm-icon" src="img/advertising.png" alt="">
                             <span class="alarm-text">보도자료</span>
                             <a href="#"><i class="bi bi-three-dots-vertical more "></i></a>
                         </div>
-                        <a href="#"><strong>카카호엔터테인먼트, 서울시 주최 '2021 서울웹툰공모전' 단독 후원사로 참여</strong></a>
-                        <span class="keyword">#카카호엔터테인먼트</span>
-                        <span class="keyword">#카카호페이지</span>
-                        <span class="keyword">#서울시</span>
                     </header>
-                    <a href="#"><img class="card-img" src="img/ee656c5a017c00001.jpg" art=""></a>
                 </article>
             </div>
-            <div class="card-wrap card-wrap__column">
+            <article class="item sub-item first">1</article>
+            <article class="item sub-item second">2</article>
+            <article class="item sub-item third">3</article>
+            <article class="item sub-item fourth">4</article>
+            <article class="item sub-item fifth">5</article>
+        </section>
+        <!-- grid 끝 -->
+
+        <!-- flex -->
+        <!-- <div class="card-wrap card-wrap__column">
                 <article class="card card-mid">
                     <header class="card-mid__tit">
                         <div class="alarm">
@@ -95,7 +100,7 @@
                             </div>
                             <div class="num-info">
                             <strong class="str-big">125,000</strong>
-                            <span class="sc-only">전일대비 상승</span>
+                            <span class="sr-only">전일대비 상승</span>
                             <span class="up"></span>
                             <span>500</span>
                             </div>
@@ -138,7 +143,8 @@
                     <img class="card-img" src="img/bg_home_culture_211111.png" art="">
                 </article>
             </div>
-        </section>
+        </section> -->
+        <!-- flex 끝 -->
     </main>
     <footer></footer>
 </body>
