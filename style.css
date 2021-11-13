@@ -258,7 +258,16 @@ h3 {
     margin-left: 5px;
     border-radius: 10px;
     font-size: 13px;
-    /* 보도자료 ::before 써서 말풍선 */
+}
+
+.alarm-text::before {
+    content: "";
+    position: absolute;
+    background: url(img/chat.svg);
+    top: 0;
+    left: -4px;
+    width: 16px;
+    height: 16px;
 }
 
 .more {
@@ -307,7 +316,7 @@ h3 {
 
 .str-small {
     display: block;
-    margin-top: 14px;
+    margin: 12px 0;
     max-height: 62px;
     font-size: 20px;
     line-height: 1.5em;
