@@ -63,6 +63,7 @@ main {
 /* 상단 메뉴바 */
 .menu-bar {
   height: 72px;
+  border-bottom: 1px solid #eee;
 }
 
 .menu-bar__title {
@@ -267,6 +268,8 @@ h3 {
   position: sticky;
   top: 109px;
   height: 700px;
+  width: 620px;
+  box-sizing: border-box;
 }
 
 .main-item strong {
@@ -408,6 +411,7 @@ h3 {
 
 .container--second {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .card-wrap {
@@ -420,6 +424,7 @@ h3 {
 
 .container--second .main {
   flex: 1;
+  padding-left: 26px;
 }
 
 .card__tit--cus {
@@ -463,11 +468,11 @@ h3 {
 
 .container--third {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-right: 7px;
 }
 .container--third div {
-  flex: 1;
-  padding: 0 18px;
+  width: 620px;
 }
 .item-etc {
   display: inline-block;
@@ -515,9 +520,39 @@ h3 {
   margin: 0 -2px 0 3px;
   font-size: 25px;
 }
+.icon-rotate {
+  transform: rotate(-45deg);
+}
 
+.more-news {
+  display: block;
+  width: 260px;
+  height: 60px;
+  margin: 84px auto 0;
+  border-radius: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  color: #000;
+  background-color: #eee;
+  text-align: center;
+}
+
+.link-top {
+  display: block;
+  box-sizing: border-box;
+  float: right;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
 /* footer */
-footer {
+.footer {
+  margin-top: 182px;
+  border-top: 1px solid #ebebeb;
   height: 500px;
 }
 
