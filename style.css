@@ -614,13 +614,20 @@ h3 {
 .section-relation {
   display: flex;
   justify-content: space-between;
+  width: 1296px;
   font-size: 12px;
-  margin-top: 120px;
+  margin: 120px auto 0;
 }
 .group-info {
-  width: 892px;
   display: flex;
   justify-content: space-between;
+  width: 892px;
+  font-family: 'Pretendard-ExtraLight';
+  color: #888;
+}
+
+.group-info > span:hover {
+  color: #333;
 }
 details {
   display: inline-block;
@@ -628,25 +635,87 @@ details {
 }
 details > summary {
   list-style: none;
+  cursor: pointer;
 }
+summary > strong {
+  font-family: 'Pretendard-SemiBold';
+  color: #333;
+}
+
 details > ul {
   position: absolute;
   padding: 0px 18px 12px;
-  bottom: 30px;
+  bottom: 53px;
   background-color: #eee;
   border-radius: 12px;
   white-space: nowrap;
   color: #666;
   font-size: 12px;
+  font-family: 'Pretendard-SemiBold';
+}
+
+.rel-site summary {
+  display: block;
+  padding: 10px 20px 12px;
+  box-sizing: border-box;
+  width: 208px;
+  border-radius: 24px;
+  color: #000;
+  background-color: #eee;
+  line-height: 18px;
+  letter-spacing: -0.2px;
+}
+.rel-site summary::after {
+  content: '+';
+  font-size: 33px;
+  font-family: 'Pretendard-ExtraLight';
+  color: #666;
+  line-height: 12px;
+  float: right;
+}
+.rel-site summary::after {
+  content: '+';
+  font-size: 33px;
+  font-family: 'Pretendard-ExtraLight';
+  color: #666;
+  line-height: 12px;
+  float: right;
+}
+
+details[open] summary::after {
+  transform: rotate(-45deg);
+  font-size: 40px;
+}
+
+.rel-site > ul {
+  box-sizing: border-box;
+  width: 208px;
 }
 
 details > ul > li {
   margin-top: 10px;
 }
 
+.mt {
+  margin: 15px 0 13px;
+}
+details[open] summary {
+  color: #333;
+}
+summary:hover {
+  color: #333;
+}
 summary i {
   margin-left: 3px;
   font-size: 10px;
+}
+.copyright {
+  display: block;
+  width: 1296px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #888;
+  clear: both;
 }
 
 @media (max-width: 1430px) {
