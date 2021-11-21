@@ -17,7 +17,6 @@
   </head>
 
   <body>
-
     <header class="menu-bar">
       <div>
         <h1 class="menu-bar__title">
@@ -36,11 +35,14 @@
           <button class="btn1" type="button">
             <a href="#"><img src="img/search.svg" /></a>
           </button>
-          <button class="btn2" type="button">
+          <button class="btn2 pc-web" type="button">
             <a href="#"><img src="img/globe.svg" /></a>
           </button>
-          <button class="btn3" type="button">
+          <button class="btn3 pc-web" type="button">
             <a href="#"><img src="img/moon.svg" /></a>
+          </button>
+          <button class="btn4 mobile" type="button">
+            <a href="#"><img src="img/burger.png" /></a>
           </button>
         </nav>
       </div>
@@ -51,7 +53,7 @@
       <header class="tit-main">
         <h3 class="tit-date">
           <em>오늘의 카카호</em>
-          <span>11월 13일 토요일 소식입니다</span>
+          <span>11월 21일 일요일 소식입니다</span>
         </h3>
       </header>
 
@@ -183,7 +185,7 @@
           <article class="item sub-item grid-single">
             <header class="card-main__tit">
               <div class="alarm">
-                <img class="alarm-icon" src="./img/advertise.png" alt="" />
+                <img class="alarm-icon" src="./img/help.png" alt="" />
                 <span class="alarm-text">고객센터</span>
                 </div>
               </header>
@@ -276,14 +278,12 @@
             <a href="#">
               <header class="card-mini__tit">
                   <div class="alarm">
-                      <img class="alarm-icon" src="img/give-love.png" alt="">
-                      <span class="alarm-text">약속과 책임</span>
+                      <img class="alarm-icon" src="img/privacy.png" alt="">
+                      <span class="alarm-text">카카오 프라이버시</span>
                   </div>
-                  <strong class="ellipsis sub-item-mini__tit">카카호는 당신과 함께 더 나은 세상을 만듭니다.</strong>
+                  <strong class="ellipsis sub-item-mini__tit">데이터의 연결과 보호의 균형을 위한 카카오의 노력</strong>
                   <div class="keyword-wrap keyword-wrap__mini">
-                  <span class="keyword ">##약속과 책임</span>
-                  <span class="keyword ">##esg</span>
-                  <span class="keyword ">##소셜임팩트</span>
+                  <span class="keyword ">#카카오프라이버시</span>
                   </div>
           </a>
           </article>
@@ -331,11 +331,10 @@
       </section>
       <a class="more-news" href="#">카카호 소식 모아보기</a>
       <!-- section 3 끝 -->
-      <a href="#header" class="link-top">
+        <button type="button" value="맨위로" onClick="javascript:window.scrollTo(0,0)" class="link-top"/>
         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
         </svg>
-      </a>
     </main>
 
     <footer class="footer">

@@ -9,10 +9,10 @@
 }
 
 @font-face {
-  font-family: 'Pretendard-ExtraLight';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff')
+  font-family: 'Pretendard-Light';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff')
     format('woff');
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -22,7 +22,9 @@ body {
   word-wrap: break-word;
   overflow-x: hidden;
 }
-
+.mobile {
+  display: none;
+}
 .menu-bar {
   position: fixed;
   top: 0;
@@ -67,6 +69,10 @@ main {
 
 .menu-bar__title {
   width: 15%;
+}
+
+.menu-bar__logo {
+  width: 95px;
 }
 
 .menu-bar__menu {
@@ -230,7 +236,7 @@ h3 {
 
 .keyword {
   display: inline-block;
-  font-family: 'Pretendard-ExtraLight';
+  font-family: 'Pretendard-Light';
   font-size: 14px;
   line-height: 60px;
   color: grey;
@@ -480,18 +486,24 @@ h3 {
   padding: 36px 36px 0;
   border-radius: 12px;
   box-sizing: border-box;
+  background: no-repeat calc(100% - 40px) calc(100% - 40px);
 }
 
 .item-etc.card1 {
   background-color: #fae100;
+  background-image: url(/img/idea.png);
+  background-size: 160px 160px;
 }
 .item-etc.card2 {
   background-color: #3c64ff;
+  background-image: url(/img/friend-cloud.png);
+  background-size: 260px 160px;
 }
 
 .item-etc strong {
   display: block;
   margin-top: 20px;
+  max-width: 430px;
   max-height: 92px;
   height: 92px;
   font-size: 32px;
@@ -548,8 +560,10 @@ h3 {
   background: #000;
   border-radius: 50%;
   color: #fff;
-  text-align: center;
+  line-height: 24px;
   padding-top: 10px;
+  border: none;
+  cursor: pointer;
 }
 /* footer */
 .footer {
@@ -591,8 +605,7 @@ h3 {
 }
 
 .ul-link li {
-  font-family: 'Pretendard-ExtraLight';
-  /* 폰트 굵기 수정해야함 */
+  font-family: 'Pretendard-Light';
   margin-top: 12px;
   color: #888;
 }
@@ -622,7 +635,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 892px;
-  font-family: 'Pretendard-ExtraLight';
+  font-family: 'Pretendard-Light';
   color: #888;
 }
 
@@ -668,7 +681,7 @@ details > ul {
 .rel-site summary::after {
   content: '+';
   font-size: 33px;
-  font-family: 'Pretendard-ExtraLight';
+  font-family: 'Pretendard-Light';
   color: #666;
   line-height: 12px;
   float: right;
@@ -676,7 +689,7 @@ details > ul {
 .rel-site summary::after {
   content: '+';
   font-size: 33px;
-  font-family: 'Pretendard-ExtraLight';
+  font-family: 'Pretendard-Light';
   color: #666;
   line-height: 12px;
   float: right;
@@ -685,6 +698,11 @@ details > ul {
 details[open] summary::after {
   transform: rotate(-45deg);
   font-size: 40px;
+}
+
+details[open] summary i {
+  display: inline-block;
+  transform: rotate(180deg);
 }
 
 .rel-site > ul {
@@ -785,5 +803,73 @@ summary i {
   }
   .container—second {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 750px) {
+  .pc-web {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  .menu-bar__menu {
+    display: none;
+  }
+  .menu-bar > div {
+    max-width: 412px;
+  }
+  .menu-bar__logo {
+    margin-left: 15px;
+  }
+  .btn4 a img {
+    position: relative;
+    top: 1px;
+    width: 22px;
+    height: 22px;
+  }
+  main {
+    max-width: 412px;
+  }
+  .tit-main {
+    max-width: 412px;
+  }
+  .tit-date {
+    font-size: 30px;
+    background-size: 36px 36px;
+  }
+
+  .tit-main em {
+    padding-left: 50px;
+    line-height: 40px;
+  }
+
+  /* 그리드 */
+  .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 364px);
+    grid-auto-rows: minmax(auto, 220px);
+    gap: 30px;
+  }
+
+  .container .main {
+    grid-column: 1 / 2;
+    grid-row: span 2;
+  }
+
+  .main-item {
+    height: 364px;
+    width: 440px;
+    box-sizing: border-box;
+  }
+
+  .culture-wrap,
+  .container--second,
+  .container--third {
+    display: none;
+  }
+  footer {
+    display: none;
   }
 }
